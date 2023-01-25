@@ -41,7 +41,7 @@ const removeItem = document.querySelectorAll(".fn-remove-me");
 
 /*2.8 Inserta una p con el texto 'Voy en medio!' entre los dos div. 
 	Recuerda que no solo puedes insertar elementos con .appendChild.*/
-const newP = document.createElement(`p`);
+const newP = document.createElement("p");
 newP.innerHTML = "Voy en medio";
 const divs = document.querySelectorAll("div");
 const body = document.querySelector("body");
