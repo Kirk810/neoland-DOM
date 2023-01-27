@@ -48,9 +48,8 @@ const body = document.querySelector("body");
 body.insertBefore(newP, divs[3]);
 
 //2.9 Inserta p con el texto 'Voy dentro!', dentro de todos los div con la clase .fn-insert-here
-const all = document.querySelectorAll(".fn-insert-here");
+const all = document.querySelectorAll("div.fn-insert-here");
 all.forEach((element)=>{
-    const newText = document.createElement("p");
-    newText.innerHTML = "Voy dentro";
+    const newText = document.createTextNode("Voy dentro");
     element.appendChild(newText);
 })
